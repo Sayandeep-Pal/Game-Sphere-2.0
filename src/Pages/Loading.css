@@ -1,0 +1,113 @@
+/* * {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  } */
+  
+  :root {
+    --hue: 223;
+    --bg: hsl(var(--hue),10%,5%);
+    --fg: hsl(var(--hue),10%,95%);
+    --dot-a: 313;
+    --dot-b: 253;
+    --dot-c: 223;
+    --dot-d: 283;
+    --trans-dur: 0.3s;
+    font-size: calc(14px + (30 - 14) * (100vw - 280px) / (3840 - 280));
+  }
+  
+  .loading {
+    background-color: var(--bg);
+    color: var(--fg);
+    display: flex;
+    font: 1em/1.5 sans-serif;
+    height: 100vh;
+    transition: background-color var(--trans-dur), color var(--trans-dur);
+  }
+  
+  .pl {
+    margin: auto;
+    perspective: 18em;
+    position: relative;
+    width: 9em;
+    height: 9em;
+    transform-style: preserve-3d;
+  }
+  .pl__dot {
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 1.5em);
+    left: calc(50% - 1.5em);
+    width: 3em;
+    height: 3em;
+  }
+  .pl__dot--a {
+    animation-name: dot-a;
+    background-color: hsl(var(--dot-a), 90%, 60%);
+    box-shadow: -0.5em -0.5em 1em hsl(var(--dot-a), 90%, 30%) inset, 0.125em 0.125em 0.25em hsl(var(--dot-a), 90%, 60%) inset, -0.25em -0.25em 0.75em 0.75em hsl(var(--dot-a), 90%, 50%) inset, 0.75em 0.75em 0.75em hsla(var(--hue), 10%, 5%, 0.7);
+  }
+  .pl__dot--b {
+    animation-name: dot-b;
+    background-color: hsl(var(--dot-b), 90%, 60%);
+    box-shadow: -0.5em -0.5em 1em hsl(var(--dot-b), 90%, 30%) inset, 0.125em 0.125em 0.25em hsl(var(--dot-b), 90%, 60%) inset, -0.25em -0.25em 0.75em 0.75em hsl(var(--dot-b), 90%, 50%) inset, 0.75em 0.75em 0.75em hsla(var(--hue), 10%, 5%, 0.7);
+  }
+  .pl__dot--c {
+    animation-name: dot-c;
+    background-color: hsl(var(--dot-c), 90%, 60%);
+    box-shadow: -0.5em -0.5em 1em hsl(var(--dot-c), 90%, 30%) inset, 0.125em 0.125em 0.25em hsl(var(--dot-c), 90%, 60%) inset, -0.25em -0.25em 0.75em 0.75em hsl(var(--dot-c), 90%, 50%) inset, 0.75em 0.75em 0.75em hsla(var(--hue), 10%, 5%, 0.7);
+  }
+  .pl__dot--d {
+    animation-name: dot-d;
+    background-color: hsl(var(--dot-d), 90%, 60%);
+    box-shadow: -0.5em -0.5em 1em hsl(var(--dot-d), 90%, 30%) inset, 0.125em 0.125em 0.25em hsl(var(--dot-d), 90%, 60%) inset, -0.25em -0.25em 0.75em 0.75em hsl(var(--dot-d), 90%, 50%) inset, 0.75em 0.75em 0.75em hsla(var(--hue), 10%, 5%, 0.7);
+  }
+  
+  /* Animations */
+  @keyframes dot-a {
+    from {
+      transform: rotateY(0) rotateZ(0) translateX(-100%) rotateY(0) rotateZ(0);
+    }
+    50% {
+      transform: rotateY(1turn) rotateZ(0) translateX(-100%) rotateY(-1turn) rotateZ(0);
+    }
+    to {
+      transform: rotateY(1turn) rotateZ(-1turn) translateX(-100%) rotateY(-1turn) rotateZ(1turn);
+    }
+  }
+  @keyframes dot-b {
+    from {
+      transform: rotateY(0) rotateZ(0) translateX(100%) rotateY(0) rotateZ(0);
+    }
+    50% {
+      transform: rotateY(1turn) rotateZ(0) translateX(100%) rotateY(-1turn) rotateZ(0);
+    }
+    to {
+      transform: rotateY(1turn) rotateZ(-1turn) translateX(100%) rotateY(-1turn) rotateZ(1turn);
+    }
+  }
+  @keyframes dot-c {
+    from {
+      transform: rotateZ(0) rotateX(0) translateY(-100%) rotateZ(0) rotateX(0);
+    }
+    50% {
+      transform: rotateZ(-1turn) rotateX(0) translateY(-100%) rotateZ(1turn) rotateX(0);
+    }
+    to {
+      transform: rotateZ(-1turn) rotateX(1turn) translateY(-100%) rotateZ(1turn) rotateX(-1turn);
+    }
+  }
+  @keyframes dot-d {
+    from {
+      transform: rotateZ(0) rotateX(0) translateY(100%) rotateZ(0) rotateX(0);
+    }
+    50% {
+      transform: rotateZ(-1turn) rotateX(0) translateY(100%) rotateZ(1turn) rotateX(0);
+    }
+    to {
+      transform: rotateZ(-1turn) rotateX(1turn) translateY(100%) rotateZ(1turn) rotateX(-1turn);
+    }
+  }

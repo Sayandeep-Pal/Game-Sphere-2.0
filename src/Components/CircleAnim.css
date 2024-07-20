@@ -1,0 +1,24 @@
+.card{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #a5fecb,#20bdff);
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+
+}
+
+.circle{
+    border-radius: inherit;
+    position: absolute;
+    background: linear-gradient(#ffffff27, #ffffff28);
+    box-shadow: -5px 5px 10px #64646f33;
+    transition: all 1s ease-in-out;
+}
+
+.card:hover{
+    transform: rotate3d(1,1,0,60deg);
+}
+.card:hover .circle:nth-child(1){
+    transform: translate3d(0,0,30px);
+}

@@ -1,0 +1,50 @@
+.bg{
+    height: 150vh;
+    width: 100%;
+    background: url(../Components/bg4.avif) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.text{
+    position: relative;
+    height: 850px;
+    width: 450px;
+    color: aliceblue;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 3px solid rgba(255, 255, 255, 0.357);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+}
+@media only screen and (max-width:426px)
+{
+    .bg{
+        margin-top: 50px;
+    }
+    .text{
+        height: 800px;
+        width: 350px;
+        padding: 30px;
+    }
+}
+@media only screen and (max-width:321px)
+{
+    .bg{
+        margin-top: 50px;
+    }
+    .text{
+        height: 800px;
+        width: 300px;
+        text-align: left;
+        padding: 10px;
+    }
+}

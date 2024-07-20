@@ -1,0 +1,248 @@
+
+.logo-body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../Components/bg1.avif')
+    no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #7f98fb;
+    overflow-x: hidden;
+}
+.hey{
+    color: #0091ff;
+    
+}
+
+.intro-text{
+    width: 60%;
+    height: 45vh;
+    position: relative;
+    top: 90px;
+    padding: 30px;
+    color: #ffffff;
+}
+
+.main-body{
+    min-height: 355vh;
+    /* display: flex; */
+    background-color: #000000;
+    background: url('../Components/bg5.avif')
+    no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+}
+
+.title
+{
+    color: #ffffff;
+}
+.game-card{
+    height: 340px;
+    width: 50%;
+    position: relative;
+    padding: 20px;
+    background: transparent;
+    backdrop-filter: blur(50px);
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 15px;
+    margin-top: 0px;
+    
+}
+.one{
+    height: 600px;
+    position: relative;
+    top: 10vh;
+    left: 47%;
+}
+.car-img{
+    height: 80px;
+    width: 80px;
+    position: relative;
+    top: -50px;
+    left: 80%;
+}
+.fps-img{
+    height: 80px;
+    width: 80px;
+    position: relative;
+    top: -50px;
+    left: 80%;
+}
+.pic-border{
+    border-radius: 50%;
+    background: white;
+}
+
+.desc{
+    background-color: #ffffff60;
+    width: 100%;
+    min-height: 10vh;
+    border: 2px solid rgba(0, 0, 0, 0.531);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #000000;
+    text-align: center;
+}
+
+.see-more{
+    width: 40%;
+    height: 50px;
+    background: #009dffc9;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 700;
+    
+}
+.btn2{
+    position: relative;
+    left: 60%;
+    background: #9d00ffc9;
+}
+.slider1{
+    position: relative;
+    top: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 120px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+.slider2{
+    position: relative;
+    top: 110px;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 120px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+/* .beats{
+    position: relative;
+    top: 200px;
+} */
+
+@media only screen and (max-width:426px){
+    .main-body{
+        min-height: 300vh;
+    }
+    .intro-text{
+        width: 75%;
+        top: -10px;
+    }
+    .game-card{
+        height: 370px;
+        width: 70%;
+    }
+    .one{
+        height: 810px;
+        position: relative;
+        left: 100px;
+    }
+    .title{
+        position: relative;
+        top: 20px;
+        width: 50%;
+    }
+    .btn2{
+        position: relative;
+        top: 20px;
+    }
+    .car-img{
+        height: 70px;
+        width: 70px;
+        position: relative;
+        left: 180px;
+    }
+    .fps-img{
+        height: 80px;
+        width: 80px;
+        position: relative;
+        left: 170px;
+    }
+    .slider1{
+        margin: 15px;
+        padding: 10px;
+    }
+    .slider2{
+        margin: 15px;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width:376px)
+{
+    .main-body{
+        height: 1300px;
+    }
+    .car-img{
+        height: 60px;
+        width: 60px;
+        position: relative;
+        left: 150px;
+    }
+    .one{
+        height: 850px;
+        position: relative;
+        left: 90px;
+    }
+    .fps-img{
+        height: 80px;
+        width: 80px;
+        position: relative;
+        left: 140px;
+    }
+}
+@media only screen and (max-width:321px)
+{
+    .logo-body{
+        min-height: 120vh;
+    }
+    .main-body{
+        min-height: 320vh;
+    }
+    .game-card{
+        height: 400px;
+    }
+    .car-img{
+        width: 40px;
+        height: 40px;
+        position: relative;
+        top: -25px;
+        left: 140px;
+    }
+    .fps-img{
+        height: 80px;
+        width: 80px;
+        position: relative;
+        left: 100px;
+    }
+    .btn1{
+        width: 50%;
+        font-weight: 500;
+    }
+    .btn2{
+        width: 50%;
+        font-weight: 500;
+        margin-left: -20px;
+    }
+    .one{
+        height: 940px;
+        position: relative;
+        left: 70px;
+    }
+}

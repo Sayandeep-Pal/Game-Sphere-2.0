@@ -1,0 +1,16 @@
+footer { 
+    background: black;
+    color: #fff; 
+    padding: 0px 0; 
+} 
+
+.footer-links a { 
+    color: #fff; 
+    text-decoration: none; 
+    margin-right: 15px; 
+    transition: color 0.3s ease; 
+} 
+
+.footer-links a:hover { 
+    color: #adb5bd; 
+} 

@@ -1,0 +1,105 @@
+.con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 140px;
+}
+.box {
+  width: 4px;
+  height: 100px;
+  background: linear-gradient(315deg, #a40606 0%, #d98324);
+  border-radius: 5px;
+  margin: 0 0.4rem;
+  animation: beats 1s linear infinite;
+}
+.box:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.box:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.box:nth-child(4) {
+  animation-delay: 0.9s;
+}
+.box:nth-child(5) {
+  animation-delay: 0.2s;
+}
+.box:nth-child(6) {
+  animation-delay: 0.4s;
+}
+.box:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.box:nth-child(8) {
+  animation-delay: 0.1s;
+}
+.box:nth-child(9) {
+  animation-delay: 0.5s;
+}
+.box:nth-child(10) {
+  animation-delay: 0.8s;
+}
+.box:nth-child(11) {
+  animation-delay: 0.6s;
+}
+.box:nth-child(12) {
+  animation-delay: 0.3s;
+}
+.box:nth-child(13) {
+  animation-delay: 0.9s;
+}
+.box:nth-child(14) {
+  animation-delay: 0.2s;
+}
+.box:nth-child(15) {
+  animation-delay: 0.4s;
+}
+.box:nth-child(16) {
+  animation-delay: 0.7s;
+}
+.box:nth-child(17) {
+  animation-delay: 0.1s;
+}
+.box:nth-child(18) {
+  animation-delay: 0.5s;
+}
+.box:nth-child(19) {
+  animation-delay: 0.8s;
+}
+.box:nth-child(20) {
+  animation-delay: 0.8s;
+}
+@keyframes beats {
+  0% {
+    transform: scale(0.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.2);
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .con {
+    position: relative;
+    top: 170px;
+    
+  }
+}
+@media only screen and (max-width: 376px) {
+    .con {
+      position: relative;
+      top: 220px;
+      
+    }
+  }
+  @media only screen and (max-width: 321px) {
+    .con {
+      position: relative;
+      top: 110px;
+      
+    }
+  }
