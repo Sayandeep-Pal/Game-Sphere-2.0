@@ -7,12 +7,12 @@ import {getFirestore} from 'firebase/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAS3KBXhlrOi5FctWVgs5Z512xVBfw0YvI",
+  apiKey: "API_KEY",
   authDomain: "gamesphere-auth.firebaseapp.com",
   projectId: "gamesphere-auth",
   storageBucket: "gamesphere-auth.appspot.com",
-  messagingSenderId: "1002693662802",
-  appId: "1:1002693662802:web:0b529f694bf1b2815c678b",
+  messagingSenderId: "MSG_SENDER_ID",
+  appId: "APP_ID",
 };
 
 // Initialize Firebase
